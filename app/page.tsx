@@ -11,7 +11,7 @@ import { Navigation } from "@/components/navigation"
 
 export default function Portfolio() {
   return (
-    <main className="min-h-screen bg-[#060C17] grid-bg">
+    <main className="min-h-screen bg-[#060C17] grid-bg" suppressHydrationWarning>
       <Navigation />
       <Hero />
       <About />
