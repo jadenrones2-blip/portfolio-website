@@ -119,7 +119,7 @@ export function Hero() {
       {/* Main content with Framer Motion parallax */}
       <motion.div
         style={{ y: parallaxY, opacity: fadeOut }}
-        className="w-full relative z-10 grid lg:grid-cols-2 lg:items-center gap-16 lg:gap-24"
+        className="w-full relative z-10 max-w-4xl"
       >
       <div>
         {/* Overline with blue accent */}
@@ -170,7 +170,7 @@ export function Hero() {
             style={{ animationDelay: '0.7s' }}
           />
           <p className="text-xl md:text-2xl font-light text-[#A1A1AA] max-w-lg leading-relaxed">
-            Building products and ventures that turn ideas into <span className="text-lime">real traction</span>.
+            Building products that connect <span className="text-lime">people</span>, <span className="text-cyan">systems</span>, and <span className="text-coral">opportunities</span>.
           </p>
         </div>
 
@@ -207,23 +207,6 @@ export function Hero() {
         </div>
         </div>
 
-        {/* Right column — stats */}
-        <div
-          className={`hidden lg:grid grid-cols-2 gap-px bg-[#0D1A2E] border border-[#0D1A2E] transition-all duration-1000 ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
-          style={{ transitionDelay: '0.9s' }}
-        >
-          {[
-            { value: "1st", label: "LPL Financial Hackathon", color: "text-lime" },
-            { value: "$140K", label: "Revenue in 90 days", color: "text-cyan" },
-            { value: "400+", label: "Applicants screened via AI", color: "text-coral" },
-            { value: "181", label: "Webinar registrations", color: "text-lime" },
-          ].map((stat, i) => (
-            <div key={i} className="bg-[#060C17] p-8 flex flex-col justify-between min-h-[140px]">
-              <span className={`text-4xl font-extralight tracking-tight ${stat.color}`}>{stat.value}</span>
-              <span className="text-xs text-[#A1A1AA]/60 font-light leading-snug mt-4">{stat.label}</span>
-            </div>
-          ))}
-        </div>
       </motion.div>
 
       {/* Scroll indicator */}

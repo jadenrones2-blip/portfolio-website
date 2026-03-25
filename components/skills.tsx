@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { TrendingUp, Users, Lightbulb } from "lucide-react"
+import { TrendingUp, Users, Lightbulb, Cloud } from "lucide-react"
 
 export function Skills() {
   const skillCategories = [
@@ -61,6 +61,18 @@ export function Skills() {
         "Aimfox",
         "Instantly",
         "Clay",
+      ],
+    },
+    {
+      title: "Technical & Cloud",
+      icon: <Cloud className="h-8 w-8 text-black" />,
+      skills: [
+        "AWS (Lambda, API Gateway, S3)",
+        "Serverless Architecture",
+        "REST APIs",
+        "JavaScript",
+        "Python",
+        "Cloud Debugging",
       ],
     },
   ]
